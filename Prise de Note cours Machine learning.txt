@@ -1,0 +1,86 @@
+UCI ML repo:
+contient un max de dataset sur lesquels on peut s'entrainer.
+
+Exemple : MAGIC Gamma Telescope Data Set
+un telescope regroupe des infos sur des particules d'énergies. et faut prédire quel type de particule créer ce type de radiation.
+Faut checker les patterns 
+
+
+Cours sur le machine learning :
+
+Different type de classification
+- Supervised, unsupervised
+- binary
+- one hot encoding
+- gradual
+
+Types de prédiction:
+ - Classification : prédire la catégorie de l'individu (donnée qualitative)
+- Regression : prédire la valeur continue de l'individu. (donnée quantitative)
+
+
+Loss Functions :
+-----------------
+L1 Loss
+L2 Loss (lisse la courbe. si la perte est trop grande c'est très pénalisé et inversement, le millieu est lissé)
+Binary Cross-entropy Loss : meilleure sont les performance plus la loss descend
+Accuracy : % de vrai réponse.
+
+
+
+Tips:
+- Scale the feature datas
+- C'est mieux d'avoir autant d'individu pour chaque catégorie quand on entraine un modèle
+
+
+Le machine learning ça fonctionne plus ou moins toujours de la même façon:
+- On créer le modèle avec ses hyperparamètres
+- On fit le modèle a un jeu de donnée.
+-Avec ce modèle fit on peut faire plein de choses, prédire, faire des analyses de qualité.
+
+Contexte metrique:
+- les positifs
+- les négatifs
+- les prédis positifs
+- les prédis négatifs
+- les vrai positifs (label comme positifs et le sont vrm)
+- les faux négatifs (label comme négatifs mais positifs)
+- les faux positifs (label comme positifs mais négatifs)
+- les vrai négatifs (label comme négatifs et le sont vrm.
+en théorie:
+- vrai = le modèle a bien prédis
+- faux = le modèle a mal prédis.
+- donc vrai xx = prédis xx et est xx
+- et faux xx = prédis xx mais est yy
+Métriques:
+- Précision : pourcentage de vrai positifs sur les prédis positifs (100% si, tout ceux qu'on a predis positifs le sont)
+- Recall : pourcentage de vrai positifs sur les positifs (100% si, tout les positifs sont prédis positif) 
+- Score F1 : combinaison des 2 scores. 
+- Accuracy : le pourcentage de points correctement prédis.
+
+
+Naive bayes:
+Particulièrement efficace avec des données textuelles.
+exemple, pour filtrer les emails spam de ceux qui sont des messages normaux.
+pourquoi naif ? parce que bayes suppose de base que tout les paramètres sont indépendant.
+
+C'est essentiellement un modèle basé sur des probabilité conditionnelles. Donc, un puissant modèle de classification, très peu complexe.
+
+Hyperparamètres : y'en a très peu.
+Quand utiliser naive bayes ?:
+- détection de spam
+- classification de documents
+- catégorisation d'emails. etc
+- analyse textuelle quoi
+- c'est un modèle peu complexe et rapide
+Quand éviter:
+- Quand les variables sont fortements liées et dépendantes entre elles.
+
+
+
+
+
+
+
+
+
