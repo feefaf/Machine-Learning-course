@@ -76,6 +76,9 @@ Quand utiliser naive bayes ?:
 Quand éviter:
 - Quand les variables sont fortements liées et dépendantes entre elles.
 
+modèles:
+- Gaussian NB pour valeurs numériques
+- Multinomial NB pour valeurs textuels.
 
 
 
