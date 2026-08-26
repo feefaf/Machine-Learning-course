@@ -60,6 +60,7 @@ Métriques:
 
 
 Naive bayes:
+--------------
 Particulièrement efficace avec des données textuelles.
 exemple, pour filtrer les emails spam de ceux qui sont des messages normaux.
 pourquoi naif ? parce que bayes suppose de base que tout les paramètres sont indépendant.
@@ -79,6 +80,48 @@ Quand éviter:
 modèles:
 - Gaussian NB pour valeurs numériques
 - Multinomial NB pour valeurs textuels.
+
+
+Regression logistique :
+------------------------
+Une regression linéaire permet la prédictions de leurs continus sur une ligne.
+Lorsque la cible est une valeur catégorielle. Cela pose problème.
+comme par exemple prédire une réussite/un echec.
+Pour cela, nous n'avons pas besoin d'une valeur continue, nous avons besoins d'une probabilité.
+"conformément aux valeurs d'entré, quelle est la probabilité de réussite"
+c'est la que la régression logistique est parfaite.
+Grâce a l'utilisation de la fonction sigmoid et a sa forme particulière.
+Les prédictions passent d'une range de - infini + infini a une range de 0 a 1, avec une asymptote en haut et en bas. un résultat parfaitement interprétable comme une probabilité.
+
+une méthode de déscente de gradient est utilisée pour optimiser la foncition de départ a passer dans le sigmoid.
+
+
+
+
+log loss, ou binary cross-entropy.
+
+Support Vector Machines (SVM) :
+--------------------------------
+Le but est de tracer une ligne sur le jeu de donnée qui divise les individus par catégorie. en 3D c'est un plan.
+ça fonctionne mal quand les data ont des outliers.
+kernel trick : x -> (x, x²)
+
+
+Reseaux de neurones :
+---------------------
+Qu'est ce qu'un neurone.
+- d'abord nous avons nos paramètres d'entrée
+- chacun de ces paramètres sera multiplié far un facteur w qui servira a ponderer la valeur.
+- le résultat, la somme de ce calcul finit dans un neurone
+- un biais peut être ajouté a cette somme
+- le résultat du neurone ira dans une "fonction d'activation"
+- La fonction d'activation génèrera un output.
+- Voila comment fonctionne un neurone
+
+Toute la magie du réseau de neurone est la fonction d'activation. Si elle n'est pas présente, le réseau de neurone ,n'est qu'un modèle linéaire.
+
+
+
 
 
 
