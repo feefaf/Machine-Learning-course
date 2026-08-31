@@ -120,11 +120,32 @@ Qu'est ce qu'un neurone.
 
 Toute la magie du réseau de neurone est la fonction d'activation. Si elle n'est pas présente, le réseau de neurone ,n'est qu'un modèle linéaire.
 
+Qu'est ce qu'une fonction d'activation ?:
+Ce sont des fonction non linéaires. 
+Le sigmoid par exemple est une fonction d'activation. Ces dernières transforment les fonctions linéaires en score de probabilité.
+- Sigmoid
+- Tanh
+- ReLU
+
+Comment le modèle s'entraine ?
+Après être passé par le modèle, le résultat est passé dans la square loss function qui va calculer sa performance.
+le but va être, grâce a la descente de gradient de minimiser la loss en corrigeant tout les poids w du réseaux de neurone.
+le réseau de neurone possède un paramètre alpha, aussi appelé "learning rate" qui sera utilisé dans le calcul du nouveau poids afin de définir a quel point ce dernier sera corrigé conformément a la direction que demande de prendre le résultat de la déscente de gradient.
+
+attention a l'overfitting, faut pas que le nombre de epochs soit trop elevé car sinon il apprendra bien trop a se perfectionner sur le modèle d'entrainement.
+
+
+TensorFlow est la librairie de choix pour ça
+
+Qu'est ce qu'un optimizer et qui est Adam ?
 
 
 
-
-
+Fonctionnement de Pytorch :
+---------------------------
+- D'abord, on converti X et y en tenseurs torch.
+- avec ces tenseurs ont les rassemble en 1 dataset.
+- pour les préparer a l'entrainement dans le modèle, on utilise un dataloader qui les divises en batchs
 
 
 
